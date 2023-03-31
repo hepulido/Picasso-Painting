@@ -1,0 +1,119 @@
+/* Set up the container for the artwork and the form */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    grid-gap: 1rem;
+    margin-top: 5%;
+    position: relative;
+  }
+  
+  .item {
+    background-color: #008080;
+    padding: 1rem;
+    text-align: center;
+    height: 100px;
+  }
+  
+  .item4 {
+    grid-column: 1 / span 3;
+  }
+
+
+  .artwork-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  } 
+  
+  /* Define the shapes and their position in the grid */
+
+   
+.art{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+
+}
+    
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ff8c00;
+    z-index: 4;
+    left: 140px;
+    bottom:90%;
+    position: absolute;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #800080;
+    position: absolute;
+    left: 80%;
+    bottom:100%;
+    z-index: 5;
+  }
+  .triangle-2{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #293be5;
+    position: absolute;
+    left: 250px;
+    bottom:100%;
+    z-index: 5;
+  }
+  
+  .rectangle {
+    width: 250px;
+    height: 150px;
+    background-color: #d9ea5d;
+    position: absolute;
+    left: 300px;
+    bottom:100px;
+    z-index: 3;
+  } 
+  .rectangle-2 {
+    width: 250px;
+    height: 150px;
+    background-color: #d9ea5d;
+    position: absolute;
+    left: 10px;
+    bottom:100px;
+    z-index: 3;
+  } 
+  
+  /* Style the form */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 15rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 15rem;
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #006666;
+  }
